@@ -1,0 +1,56 @@
+.left-widget{
+    width: 100%;
+    display: block;
+}
+.left-widget .header{
+    border: 1px solid gray;
+    background-color: rgb(73, 73, 72);
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+    padding: 0% 2%;
+    border-radius: 5px;
+    position: fixed;
+    width: 16%;
+    color: #fff;
+
+}
+.header .burger{
+    display: inline;
+    width: 50%;
+    
+}
+.header .burger:hover,
+.header .add-new-chat:hover
+{
+    cursor: pointer;
+    opacity: 0.6;
+}
+.burger div{
+    border: 1px solid;
+    margin: 4px 0;
+}
+.header .chat-name{
+    width: 100%;
+}
+.header .add-new-chat{
+    margin: 20px;
+}
+.add-new-chat .horizontal{
+    border: 1px solid;
+}
+.add-new-chat .vertical{
+    border: 1px solid;
+    transform: rotate(-270deg);
+}
+.left-widget .prevMessages{
+    background-color: rgb(58, 47, 23);
+    height: 600px;
+    margin: 1% 0;
+    border-radius: 2px;
+    position: fixed;
+    top: 50px;
+    width: 20%;
+    z-index: 1;
+}
+
