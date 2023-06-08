@@ -3,12 +3,17 @@
     margin: 0px;
     padding: 0px;
 }
+
 .chat-bot{
     background-color: #ffffff;
     display: grid;
     grid-template-columns: 20% 80%;
     margin: 0;
     padding: 0;
+}
+.dark .chat-bot{
+    background: #000;
+    color: #fff;
 }
 
 .chat-bot .left-widget,

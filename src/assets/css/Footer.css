@@ -13,6 +13,11 @@
     align-items: center;
     justify-content: center;
 }
+.dark .footer{
+    background: #000;
+    color: #fff;
+    border-top: 0.5px solid gray;
+}
 .footer p{
     font-size: xx-small;
     color: #fff;

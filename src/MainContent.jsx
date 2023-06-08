@@ -3,16 +3,21 @@ import { useState } from "react";
 import './assets/css/MainContent.css'
 import avatar from './assets/images/phil.jpg'
 import newavatar from './assets/images/1.jpg'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 function MainContent(){
     const [messages, setMessages] = useState([])
     const [inputValue, setInputValue] = useState('')
 
     const [reply, setReply] = useState("Thank you for asking, I will reply to you soon")
-    
-    
 
+    const [isOpen, setIsOpen] = useState(false)
+    const handleAvatarClick = () => {
+        setIsOpen(true)
+        
 
+    }
     const handleMessageSubmit = (e) => {
         e.preventDefault()
         // console.log(questionCount)
@@ -23,6 +28,7 @@ function MainContent(){
                 reply: reply
             }])
             setInputValue('')
+            
             // questionCount + 1
             // We shall call the chatbot backend API here to get the response
             // After receiving the response, add it to the messages state
@@ -51,7 +57,6 @@ function MainContent(){
 
                     ))}
                 </div>
-                {/* <div className="reply">{reply}</div> */}
                 <div className="form">
                     <form 
                     className="bot-input"
@@ -69,15 +74,27 @@ function MainContent(){
                                 (e) => setInputValue(e.target.value)
                             }
                         />
+
+                        <div className="submit">
+                            {/* <button
+                                type="submit"
+                            >Send</button> */}
+                            <FontAwesomeIcon icon={faPaperPlane} />
+                        </div>
                     </div>
-                    <div className="submit">
-                        <button
-                            type="submit"
-                        >Send</button>
-                    </div>
+                    
 
                     </form>
                 </div>
+                <>
+                    <ul className="links">
+                        <li>
+                            
+                            Contact Us</li>
+                        <li>My Profile</li>
+                        <li>Logout</li>
+                    </ul>
+                </>
             </div>
         </div>
     )

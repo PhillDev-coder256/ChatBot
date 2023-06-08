@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './assets/css/Footer.css'
 
 // const changeMode = () => {
@@ -49,27 +49,42 @@ import './assets/css/Footer.css'
 // checkMode()
 
 function Footer(){
-    const [isDarkMode, setIsDarkMode] = useState(false)
-    const toggleDarkMode = () => {
-        setIsDarkMode(!isDarkMode)
-        console.log("Hello")
+    // const [isDarkMode, setIsDarkMode] = useState(false)
+    // const toggleDarkMode = () => {
+    //     setIsDarkMode(!isDarkMode)
+    //     console.log("Hello")
+    // }
+
+    const [theme, setTheme] = useState('light')
+
+    const toggleTheme = () => {
+        if(theme === 'light'){
+            setTheme('dark')
+        }else{
+            setTheme('light')
+        }
     }
 
+    useEffect(() => {
+        document.body.className = theme
+    }, [theme])
+
     return(
-        <div className="footer">
+        <div className="footer ${theme}">
             <p>Copyright &copy; reserved to [Business Name]</p>
-            <button
+            {/* <button
                 id="myToggleBtn"
                 onClick={toggleDarkMode}
                 className={`dark-mode-toggle ${isDarkMode ? 'dark' : 'light'}`}
             >
                 {isDarkMode ? 'Disable dark mode' : 'Enable dark mode'}
-            </button>
+            </button> */}
             {/* <button
                 id="lightToggleBtn"
             >
                 Light Mode
             </button> */}
+            <button onClick={toggleTheme} >Toggle theme</button>
         </div>
     )
 }
