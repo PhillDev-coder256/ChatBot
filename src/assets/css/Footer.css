@@ -1,11 +1,11 @@
 .footer{
     /* border: 1px solid green; */
     /* margin: 0 2%; */
-    padding: 0 2%;
+    padding: 0.5% 2% 5% 2%;
     width: 97.5%;
     position: fixed;
     top: 605px;
-    height: 50px;
+    /* height: 50px; */
     background-color: rgb(29, 25, 1);
     z-index: 2;
     display: flex;
@@ -14,21 +14,22 @@
     justify-content: center;
 }
 .footer p{
-    font-size: x-small;
+    font-size: xx-small;
     color: #fff;
     font-weight: none;
 
 }
 .footer button{
     margin-left: auto;
-    margin-right: 2.5%;
-    height: 20px;
+    margin-right: 2%;
+    /* height: 20px; */
     align-items: center;
     justify-content: center;
     font-size: 12px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     border-radius: 3px;
     border: 0px;
+    padding: 0.5% 1%;
 }
 .footer button:hover{
     background: #000;

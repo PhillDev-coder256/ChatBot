@@ -3,12 +3,13 @@ import Header from "./Header";
 import Footer from "./Footer";
 import MainContent from "./MainContent";
 import './assets/css/mediaQueries/media.css'
+import './assets/css/index.css'
 
 
 function ChatBot(){
 
     return(
-        <div>
+        <>
             <div className="chat-bot">
                 <div className="left-widget">
                     <Header />
@@ -22,7 +23,7 @@ function ChatBot(){
             </div>
             <Footer />
             
-        </div>
+        </>
         
     )
 }

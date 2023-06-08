@@ -1,6 +1,10 @@
 import React from "react";
 import './assets/css/Header.css'
 import './assets/css/mediaQueries/media.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
+
 
 function Header(){
     
@@ -18,8 +22,10 @@ function Header(){
                 </div>
 
                 <div className="add-new-chat">
-                    <div className="vertical"></div>
-                    <div className="horizontal"></div>
+                    {/* <div className="vertical"></div>
+                    <div className="horizontal"></div> */}
+                    {/* <FontAwesomeIcon icon={faEnvelope} /> */}
+                    <FontAwesomeIcon icon={faPlus} />
                 </div>
             
 

@@ -57,7 +57,7 @@ function Footer(){
 
     return(
         <div className="footer">
-            <p>Copyright reserved to [Business Name]</p>
+            <p>Copyright &copy; reserved to [Business Name]</p>
             <button
                 id="myToggleBtn"
                 onClick={toggleDarkMode}

@@ -1,9 +1,6 @@
 @media screen and (max-width: 700px) {
     .left-widget .header{
-        background: #000;
         width: 98%;
-        padding: 0 2%;
-        height: 45px;
         align-items: center;
         justify-content: center;
         grid-template-columns: 10% 80% 10%;

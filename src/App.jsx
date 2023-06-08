@@ -2,11 +2,8 @@ import React from "react";
 import ChatBot from "./ChatBot";
 
 function App(){
-    return(
-        <div>
-            <ChatBot />
-        </div>
-    )
+    return  <ChatBot />
+    
 }
 
 export default App

@@ -6,13 +6,15 @@
     border: 1px solid gray;
     background-color: rgb(73, 73, 72);
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 20% 40% 40%;
     align-items: center;
-    padding: 0% 2%;
-    border-radius: 5px;
+    justify-content: center;
+    padding: 1% 2%;
+    /* border-radius: 5px; */
     position: fixed;
     width: 16%;
     color: #fff;
+    z-index: 2;
 
 }
 .header .burger{
@@ -34,22 +36,17 @@
     width: 100%;
 }
 .header .add-new-chat{
-    margin: 20px;
+    align-items: center;
+    justify-content: center;
 }
-.add-new-chat .horizontal{
-    border: 1px solid;
-}
-.add-new-chat .vertical{
-    border: 1px solid;
-    transform: rotate(-270deg);
-}
+
 .left-widget .prevMessages{
     background-color: rgb(58, 47, 23);
     height: 600px;
     margin: 1% 0;
     border-radius: 2px;
     position: fixed;
-    top: 50px;
+    top: 30px;
     width: 20%;
     z-index: 1;
 }
